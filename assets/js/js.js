@@ -84,7 +84,7 @@ var swiper = new Swiper(".myImages", {
 
 
 // wizard-form
-let currentTab = 3; // Set the second tab as active initially
+let currentTab = 0;
 const tabs = document.querySelectorAll('.tab');
 const navLinks = document.querySelectorAll('.nav-pills .nav-link');
 
@@ -143,7 +143,5 @@ navLinks.forEach(link => {
     });
 });
 
-// Initialize with Tab 2 as active
 showTab(currentTab);
-
 // wizard-form
