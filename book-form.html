@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="swup-enabled" data-scroll-direction="vertical">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+</head>
+<body >
+    <header class="py-3">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <a class="navbar-brand fw-bold" href="./index.html">Rent <span class="red-text">Car</span></a>
+            <button
+              class="navbar-toggler black-bg py-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><i class='bx bx-menu text-black'></i></span>
+            </button>
+            <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-uppercase active px-4"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-uppercase px-4"
+                    aria-current="page"
+                    href="./car-listing.html"
+                    >Vehicles</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-uppercase px-4"
+                    aria-current="page"
+                    href="./about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-uppercase px-4"
+                    aria-current="page"
+                    href="./contactus.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+<section class="page-title">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="hero-text text-center py-5 my-5">
+          <h1 class="text-white text-capitalize mb-2">Booking Form</h1>
+          <div class="d-flex justify-content-center">
+            <a href="" class="text-decoration-none red-text fs-4">Home</a> <span class="text-white fs-4 mx-2">/</span><p class="text-white fs-4">Booking Form</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bookingform">
+  <div class="container mt-5">
+    <ul class="nav nav-pills p-2 mx-auto" id="formTabs">
+        <li class="nav-item"><a class="nav-link active" data-index="0">Request</a></li>
+        <li class="nav-item"><a class="nav-link disabled" data-index="1">Select</a></li>
+        <li class="nav-item"><a class="nav-link disabled" data-index="2">Extras</a></li>
+        <li class="nav-item"><a class="nav-link disabled" data-index="3">Summary</a></li>
+    </ul>
+    
+    <form id="wizardForm" class="mt-3">
+        <div class="tab active bg-light p-4" id="tab-0">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+              <label for="name" class="small mb-2">Name</label>
+            <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col mb-4">
+              <label for="email" class="small mb-2">Email</label>
+            <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col mb-4">
+              <label for="number" class="small mb-2">Phone Number</label>
+            <input type="number" class="form-control" id="number" required>
+            </div>
+            <div class="col">
+              <label for="option" class="mb-2 small">Travellers No:</label>
+            <select class="form-control" id="option" required>
+                <option value="">Number of People</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+            </div>
+            <div class="col">
+              <label for="option" class="mb-2 small">Pickup Location:</label>
+            <select class="form-control" id="option" required>
+                <option value="">Choose...</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+            </div>
+            <div class="col">
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  <label for="Date" class="mb-2 small">Pickup Date:</label>
+            <input type="text" class="form-control" id="Date" required>
+                </div>
+                <div class="col mb-4">
+                  <label for="Time" class="mb-2 small" >Pickup Time:</label>
+            <input type="text" class="form-control" id="Time" required>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <label for="option" class="mb-2 small">Return Location:</label>
+            <select class="form-control" id="option" required>
+                <option value="">Choose...</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+            </div>
+            <div class="col">
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  <label for="Date" class="mb-2 small">Return Date:</label>
+            <input type="text" class="form-control" id="Date" required>
+                </div>
+                <div class="col mb-4">
+                  <label for="Time" class="mb-2 small" >Return Time:</label>
+            <input type="text" class="form-control" id="Time" required>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <label for="age" class="mb-2 small">Minimum Age:</label>
+            <select class="form-control" id="age" required>
+                <option value="">Choose...</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+            </div>
+            <div class="col mb-4">
+              <label for="option" class="mb-2 small">Category Type:</label>
+              <select class="form-control" id="option" required>
+                  <option value="">Choose...</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+              </select>
+            </div>
+          </div>
+            <label for="name" class="small mb-2">Promo code (if any):</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="tab bg-light p-4" id="tab-1">
+            <div class="row">
+              <div class="col-lg-5 col-xl-4">
+                <div class="bg-white p-4">
+                  <h4 class="mb-4">Summary</h4>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Customer Name:</h6>
+                    <p class="small mb-0">Alexander</p>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Email:</h6>
+                    <p class="small mb-0">Alexander@gmail.com</p>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Phone Number:</h6>
+                    <p class="small mb-0">(+91)-123-1234567</p>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Travellers Number</h6>
+                    <p class="small mb-0">4</p>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Pickup Location:</h6>
+                    <p class="small mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Pickup Date & Time:</h6>
+                    <div class="d-flex gap-4">
+                      <p class="small mb-2 mb-lg-0">12/12/2025</p>
+                      <p class="small mb-0 ">12:20 PM</p>
+                    </div>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Return Location:</h6>
+                    <p class="small mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Return Date & Time:</h6>
+                    <div class="d-flex gap-4">
+                      <p class="small mb-2 mb-lg-0">12/1/2025</p>
+                      <p class="small mb-0 ">12:20 PM</p>
+                    </div>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Minimum Age:</h6>
+                    <p class="small mb-0">21 Years</p>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Category Type</h6>
+                    <p class="small mb-0">Hiace</p>
+                  </div>
+                  <div class="">
+                    <h6 class="mb-2">Promo Code</h6>
+                    <p class="small mb-0">ee2243</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-xl-8">
+                <label class="radio-card mb-4">
+                  <input type="radio" name="option" value="1">
+                  <div class="box d-flex  bg-white">
+                    <div>
+                      <img src="./assets/image/2.jpg" alt="">
+                  
+                    </div>
+                    <div class="text p-3">
+                      <div class="star d-flex gap-1 fs-5">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                      </div>
+                        <div class="fleet-text mb-4 mt-2">
+                          <h4 class="text-capitalize fs-5 fw-bold">The BMW 7 Series Sedan</h4>
+                          <p class="fs-5 fw-bold red-text mb-2">$50 | Per Day</p>
+                          <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel!</p>
+                        </div>
+                        <div class="d-md-flex gap-4 flex-wrap align-items-center ">
+                          <div class="mb-4 mb-md-0">
+                            <span class=" fs-4"><i class='bx bxs-group me-1'></i></span>
+                            <p class="mb-0 small">4 Passengers</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bxs-briefcase-alt'></i></span>
+                            <p class="mb-0 small">Luggage</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class=" fs-4"><i class='bx bx-gas-pump'></i></span>
+                            <p class="mb-0 small">Petrol</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-tachometer'></i></span>
+                            <p class="mb-0 small">Auto</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-id-card'></i></span>
+                            <p class="mb-0 small">Standard Licence</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-wind'></i></span>
+                            <p class="mb-0 small">AC</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </label>
+                <label class="radio-card mb-4">
+                  <input type="radio" name="option" value="1">
+                  <div class="box d-flex  bg-white">
+                    <div>
+                      <img src="./assets/image/2.jpg" alt="">
+                  
+                    </div>
+                    <div class="text p-3">
+                      <div class="star d-flex gap-1 fs-5">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                      </div>
+                        <div class="fleet-text mb-4 mt-2">
+                          <h4 class="text-capitalize fs-5 fw-bold">The BMW 7 Series Sedan</h4>
+                          <p class="fs-5 fw-bold red-text mb-2">$50 | Per Day</p>
+                          <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel!</p>
+                        </div>
+                        <div class="d-md-flex gap-4 flex-wrap align-items-center ">
+                          <div class="mb-4 mb-md-0">
+                            <span class=" fs-4"><i class='bx bxs-group me-1'></i></span>
+                            <p class="mb-0 small">4 Passengers</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bxs-briefcase-alt'></i></span>
+                            <p class="mb-0 small">Luggage</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class=" fs-4"><i class='bx bx-gas-pump'></i></span>
+                            <p class="mb-0 small">Petrol</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-tachometer'></i></span>
+                            <p class="mb-0 small">Auto</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-id-card'></i></span>
+                            <p class="mb-0 small">Standard Licence</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-wind'></i></span>
+                            <p class="mb-0 small">AC</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </label>
+                <label class="radio-card mb-4">
+                  <input type="radio" name="option" value="1">
+                  <div class="box d-flex  bg-white">
+                    <div>
+                      <img src="./assets/image/2.jpg" alt="">
+                  
+                    </div>
+                    <div class="text p-3">
+                      <div class="star d-flex gap-1 fs-5">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                      </div>
+                        <div class="fleet-text mb-4 mt-2">
+                          <h4 class="text-capitalize fs-5 fw-bold">The BMW 7 Series Sedan</h4>
+                          <p class="fs-5 fw-bold red-text mb-2">$50 | Per Day</p>
+                          <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel!</p>
+                        </div>
+                        <div class="d-md-flex gap-4 flex-wrap align-items-center ">
+                          <div class="mb-4 mb-md-0">
+                            <span class=" fs-4"><i class='bx bxs-group me-1'></i></span>
+                            <p class="mb-0 small">4 Passengers</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bxs-briefcase-alt'></i></span>
+                            <p class="mb-0 small">Luggage</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class=" fs-4"><i class='bx bx-gas-pump'></i></span>
+                            <p class="mb-0 small">Petrol</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-tachometer'></i></span>
+                            <p class="mb-0 small">Auto</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-id-card'></i></span>
+                            <p class="mb-0 small">Standard Licence</p>
+                          </div>
+                          <div class="mb-4 mb-md-0">
+                            <span class="fs-4"><i class='bx bx-wind'></i></span>
+                            <p class="mb-0 small">AC</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </label>
+                <nav aria-label="Page navigation example mt-5">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link active" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+        </div>
+        <div class="tab  bg-light p-4" id="tab-2">
+          <div class="row">
+            <div class="col-lg-5 col-xl-4">
+              <div class="bg-white p-3">
+                <img src="./assets/image/2.jpg" width="100%" class="rounded-3" alt="">
+                </div>
+                <div class="bg-white p-3 mt-4">
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Daily Rate :</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="small">7 days @ $182.00 </span>
+                      <span class="small">$1274.00</span>
+                    </div>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Extra Fees :</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="small">Total Optional Extras </span>
+                      <span class="small">$1274.00</span>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between">
+                    <h6 class="mb-0">Total :</h6>
+                    <p class="small mb-0 text-end"> 
+                      AUD $1274.00 <br><span class="small">(Inc. include GST: $115.82)</span>
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-xl-8">
+              <div class="bg-white p-4">
+                <h4 class="mb-4">Summary</h4>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Name:</h6>
+                  <p class="small mb-0">Alexander</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Email</h6>
+                    <p class="small mb-0">Alexander@gmail.com</p>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Phone Number:</h6>
+                  <p class="small mb-0">(+91)-123-1234567</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Travellers Number</h6>
+                    <p class="small mb-0">4</p>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Pickup Location:</h6>
+                  <p class="small mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Pickup Date & Time:</h6>
+                  <div class="d-flex gap-4">
+                    <p class="small mb-2 mb-lg-0">12/12/2025</p>
+                    <p class="small mb-0 ">12:20 PM</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Return Location:</h6>
+                  <p class="small mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Return Date & Time:</h6>
+                  <div class="d-flex gap-4">
+                    <p class="small mb-2 mb-lg-0">12/12/2025</p>
+                    <p class="small mb-0 ">12:20 PM</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between">
+                  <div>
+                    <h6 class="mb-2">Minimum Age:</h6>
+                    <p class="small mb-0">21 Years</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Category Type</h6>
+                    <p class="small mb-0">Hiace</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="bg-white p-3 mt-4">
+                  <h4 class="mb-4">Optional Extras:</h4>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="Return">
+                    <label class="form-check-label d-flex justify-content-between" for="Return">
+                      <span>After Hour Fee - Return</span>
+                      <span>$150</span>
+                    </label>
+                  </div>
+                  <div class="form-check ">
+                    <input class="form-check-input" type="checkbox" value="" id="Pickup">
+                    <label class="form-check-label d-flex justify-content-between" for="Pickup">
+                      <span>After Hour Fee - Pickup</span>
+                      <span>$150</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        <div class="tab bg-light p-4" id="tab-3">
+          <div class="row">
+            <div class="col-lg-5 col-xl-4">
+              <div class="bg-white p-3">
+                <img src="./assets/image/2.jpg" width="100%" class="rounded-3" alt="">
+                </div>
+                <div class="bg-white p-3 mt-4">
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Daily Rate :</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="small">7 days @ $182.00 </span>
+                      <span class="small">$1274.00</span>
+                    </div>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">Extra Fees :</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="small">Total Optional Extras </span>
+                      <span class="small">$1274.00</span>
+                    </div>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">After Hour Fee - Return:</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="small">$150</span>
+                    </div>
+                  </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <h6 class="mb-2">After Hour Fee - Pickup:</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="small">$150</span>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between">
+                    <h6 class="mb-0">Total :</h6>
+                    <p class="small mb-0 text-end"> 
+                      AUD $1574.00 <br><span class="small">(Inc. include GST: $115.82)</span>
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-xl-8">
+              <div class="bg-white p-4">
+                <h4 class="mb-4">Summary</h4>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Name:</h6>
+                  <p class="small mb-0">Alexander</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Email</h6>
+                    <p class="small mb-0">Alexander@gmail.com</p>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Phone Number:</h6>
+                  <p class="small mb-0">(+91)-123-1234567</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Travellers Number</h6>
+                    <p class="small mb-0">4</p>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Pickup Location:</h6>
+                  <p class="small mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Pickup Date & Time:</h6>
+                  <div class="d-flex gap-4">
+                    <p class="small mb-2 mb-lg-0">12/12/2025</p>
+                    <p class="small mb-0 ">12:20 PM</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
+                  <div>
+                    <h6 class="mb-2">Return Location:</h6>
+                  <p class="small mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Return Date & Time:</h6>
+                  <div class="d-flex gap-4">
+                    <p class="small mb-2 mb-lg-0">12/12/2025</p>
+                    <p class="small mb-0 ">12:20 PM</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="d-md-flex justify-content-between">
+                  <div>
+                    <h6 class="mb-2">Minimum Age:</h6>
+                    <p class="small mb-0">21 Years</p>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Category Type</h6>
+                    <p class="small mb-0">Hiace</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <button type="button" class="primary-btn px-4 py-2" id="prevBtn">Back</button>
+            <button type="button" class="secondary-btn px-4 py-2" id="nextBtn">Next</button>
+        </div>
+    </form>
+</div>
+</section>
+<footer class="py-5 mt-5"> 
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5">
+      <div class="col mb-4 mb-lg-0">
+        <h5 class="text-white mb-4 fw-bold">Car <span class="red-text">Rental</span></h5>
+        <p class="text-white small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur, rerum qui minus aperiam ad dolores commodi quia corrupti cum?
+        </p>
+        <p class="text-white mb-1"><i class='bx bx-phone-call ' ></i> <span class="small">+92-345-1234567</span></p>
+        <p class="text-white mb-1"><i class='bx bx-envelope ' ></i>  <span class="small">info@gmail.com</span></p>
+        <p class="text-white mb-1"><i class='bx bx-current-location ' ></i><span class="small"> Lorem ipsum dolor sit amet.</span></p>
+        
+      </div>
+      <div class="col mb-4 mb-lg-0 ps-lg-5">
+        <h5 class="text-white mb-4 fw-bold">Company</h5>
+        <ul class="links mb-0">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./car-listing.html">Car Models</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col mb-4 mb-lg-0">
+        <h5 class="text-white mb-4 fw-bold">Working Hours</h5>
+        <p class="text-white"><b>Mon - Fri :</b> 9:00 AM - 9:00 PM</p>
+        <p class="text-white"><b>Sat :</b> 9:00 AM - 5:00 PM</p>
+        <p class="text-white"><b>Sun :</b> Closed</p>
+      </div>
+      <div class="col mb-4 mb-lg-0">
+        <h5 class="text-white mb-4 fw-bold">Subscribe to the Newsleeters</h5>
+        <div class="footer-newsletter-form">
+          <form id="newslettersForm" action="#" method="POST">
+              <div class="form-group">
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Email ..." required="">
+                  <button type="submit" class="section-icon-btn primary-btn"><i class='bx bx-search-alt-2' ></i></button>
+              </div>
+          </form>
+      </div>
+      
+      <div class="d-md-flex align-items-center justify-content-center gap-3 social-media mt-5">
+        <a href="" class="text-white fs-4"><i class='bx bxl-facebook' ></i></a>
+        <a href="" class="text-white fs-4"><i class='bx bxl-linkedin' ></i></a>
+        <a href="" class="text-white fs-4"><i class='bx bxl-twitter' ></i></a>
+        <a href="" class="text-white fs-4"><i class='bx bxl-instagram'></i></a>
+      </div>
+        <div></div>
+      </div>
+    </div>
+    <div class="pt-5 text-center" style="border-top: 1px solid rgba(168, 168, 168, 0.461);">
+      <p class="mb-0 text-white">Copyright © 2024 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+ <script src="./assets/js/swiper.min.js"></script>
+      <script src="./assets/js/jquery.js"></script>
+      <script src="./assets/js/js.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
